@@ -1,5 +1,5 @@
 Title of work: Custom InstructLab Taxonomy
-Link to work: https://github.com/AMMU-N-RAJ/instructlab-custom-taxonomy
+Link to work: https://github.com/AMMU-N-RAJ/Ollama-Llama-3.2-3B-Interactive-Chat
 License of the work: Apache-2.0
 Creator names: AMMU N RAJ 
 
