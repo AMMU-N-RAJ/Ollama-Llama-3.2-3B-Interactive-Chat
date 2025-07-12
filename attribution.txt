@@ -1,7 +1,7 @@
 Title of work: Custom InstructLab Taxonomy
-Link to work: https://github.com/YOUR_GITHUB_USERNAME/instructlab-custom-taxonomy
+Link to work: https://github.com/AMMU-N-RAJ/instructlab-custom-taxonomy
 License of the work: Apache-2.0
-Creator names: YOUR_NAME 
+Creator names: AMMU N RAJ 
 
 This taxonomy is designed for training AI models on custom domain-specific knowledge
 and skills, following the InstructLab taxonomy structure and guidelines.
