@@ -1,0 +1,68 @@
+version: 3
+domain: data_science
+created_by: your_name
+seed_examples:
+  - context: |
+      Machine learning is a subset of artificial intelligence that focuses on 
+      algorithms that can learn from and make predictions on data. Supervised 
+      learning uses labeled training data, while unsupervised learning finds 
+      patterns in unlabeled data.
+    questions_and_answers:
+      - question: What is the difference between supervised and unsupervised learning?
+        answer: |
+          Supervised learning uses labeled training data where the algorithm learns 
+          from input-output pairs to make predictions on new data. Examples include 
+          classification and regression. Unsupervised learning works with unlabeled 
+          data to discover hidden patterns, structures, or relationships, such as 
+          clustering or dimensionality reduction.
+      
+      - question: What are some common supervised learning algorithms?
+        answer: |
+          Common supervised learning algorithms include:
+          - Linear Regression (for continuous targets)
+          - Logistic Regression (for binary classification)
+          - Decision Trees
+          - Random Forest
+          - Support Vector Machines (SVM)
+          - Neural Networks
+          - k-Nearest Neighbors (k-NN)
+          - Gradient Boosting algorithms like XGBoost
+
+  - context: |
+      Data preprocessing is a crucial step in machine learning that involves 
+      cleaning, transforming, and preparing raw data for analysis. This includes 
+      handling missing values, outliers, feature scaling, and encoding categorical 
+      variables.
+    questions_and_answers:
+      - question: Why is data preprocessing important in machine learning?
+        answer: |
+          Data preprocessing is essential because:
+          1. Raw data often contains noise, inconsistencies, and missing values
+          2. Different features may have different scales, affecting algorithm performance
+          3. Some algorithms require specific data formats (e.g., numerical vs categorical)
+          4. Proper preprocessing can significantly improve model accuracy and training efficiency
+          5. It helps identify and handle outliers that could skew results
+
+      - question: What are common data preprocessing techniques?
+        answer: |
+          Common preprocessing techniques include:
+          - Handling missing data (imputation, removal)
+          - Feature scaling (normalization, standardization)
+          - Encoding categorical variables (one-hot, label encoding)
+          - Outlier detection and treatment
+          - Feature selection and extraction
+          - Data transformation (log, polynomial features)
+          - Text preprocessing (tokenization, stemming for NLP)
+
+document_outline: |
+  This knowledge covers fundamental concepts in data science including:
+  1. Types of machine learning (supervised vs unsupervised)
+  2. Common algorithms and their applications
+  3. Data preprocessing techniques and importance
+  4. Best practices for model development
+
+document:
+  repo: https://github.com/yourusername/data-science-knowledge
+  commit: main
+  patterns:
+    - data_science_fundamentals.md

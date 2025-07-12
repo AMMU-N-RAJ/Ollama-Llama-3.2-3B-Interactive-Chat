@@ -1,0 +1,128 @@
+version: 3
+domain: programming
+created_by: your_name
+seed_examples:
+  - context: |
+      Python is a high-level, interpreted programming language known for its 
+      readability and versatility. It supports multiple programming paradigms 
+      including procedural, object-oriented, and functional programming.
+    questions_and_answers:
+      - question: How do you define a function in Python?
+        answer: |
+          In Python, you define a function using the `def` keyword followed by 
+          the function name and parentheses. Here's the syntax:
+          
+          ```python
+          def function_name(parameters):
+              """Optional docstring"""
+              # Function body
+              return value  # Optional
+          ```
+          
+          Example:
+          ```python
+          def greet(name):
+              """This function greets someone"""
+              return f"Hello, {name}!"
+          
+          # Call the function
+          message = greet("World")
+          print(message)  # Output: Hello, World!
+          ```
+
+      - question: What are Python data types and how do you use them?
+        answer: |
+          Python has several built-in data types:
+          
+          **Basic types:**
+          - `int`: Integers (e.g., 42, -10)
+          - `float`: Decimal numbers (e.g., 3.14, -2.5)
+          - `str`: Strings (e.g., "hello", 'world')
+          - `bool`: Boolean (True, False)
+          
+          **Collection types:**
+          - `list`: Ordered, mutable collection [1, 2, 3]
+          - `tuple`: Ordered, immutable collection (1, 2, 3)
+          - `dict`: Key-value pairs {"name": "John", "age": 30}
+          - `set`: Unordered, unique elements {1, 2, 3}
+          
+          You can check types using `type()` function and convert between types 
+          using constructors like `int()`, `str()`, `list()`, etc.
+
+  - context: |
+      Python control structures include conditional statements (if/elif/else) 
+      and loops (for, while) that control the flow of program execution.
+    questions_and_answers:
+      - question: How do you write conditional statements in Python?
+        answer: |
+          Python uses if/elif/else statements for conditional execution:
+          
+          ```python
+          # Basic if statement
+          age = 18
+          if age >= 18:
+              print("You are an adult")
+          
+          # if/else
+          if age >= 18:
+              print("You can vote")
+          else:
+              print("You cannot vote yet")
+          
+          # if/elif/else
+          score = 85
+          if score >= 90:
+              grade = "A"
+          elif score >= 80:
+              grade = "B"
+          elif score >= 70:
+              grade = "C"
+          else:
+              grade = "F"
+          ```
+          
+          Python uses indentation (typically 4 spaces) to define code blocks.
+
+      - question: What are the different types of loops in Python?
+        answer: |
+          Python has two main types of loops:
+          
+          **For loops** - iterate over sequences:
+          ```python
+          # Iterate over a list
+          for item in [1, 2, 3]:
+              print(item)
+          
+          # Iterate over a range
+          for i in range(5):  # 0 to 4
+              print(i)
+          
+          # Iterate over string
+          for char in "hello":
+              print(char)
+          ```
+          
+          **While loops** - execute while condition is true:
+          ```python
+          count = 0
+          while count < 5:
+              print(count)
+              count += 1
+          ```
+          
+          Both support `break` (exit loop) and `continue` (skip iteration).
+
+document_outline: |
+  This knowledge covers Python programming fundamentals including:
+  1. Function definition and usage
+  2. Data types and type conversion
+  3. Conditional statements (if/elif/else)
+  4. Loop structures (for and while loops)
+  5. Control flow statements (break, continue)
+
+document:
+  repo: https://github.com/yourusername/python-programming-guide
+  commit: main
+  patterns:
+    - python_basics.md
+    - control_structures.md

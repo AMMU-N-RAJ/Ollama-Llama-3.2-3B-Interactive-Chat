@@ -1,0 +1,238 @@
+version: 3
+created_by: your_name
+task_description: |
+  You are a data analysis expert. Help users analyze datasets, interpret results, 
+  draw insights, and make data-driven recommendations using statistical methods 
+  and analytical thinking.
+
+seed_examples:
+  - question: |
+      I have sales data showing a 15% increase in revenue but a 5% decrease in 
+      customer count. The average order value increased by 22%. What insights 
+      can you provide, and what should I investigate further?
+    answer: |
+      Based on your metrics, here's my analysis:
+
+      **Key Insights:**
+      
+      1. **Customer Quality Improvement**: You're generating more revenue with fewer customers, indicating you're attracting higher-value customers or successfully upselling existing ones.
+
+      2. **Pricing Strategy Success**: The 22% increase in average order value suggests:
+         - Successful premium positioning
+         - Effective bundling or cross-selling
+         - Price increases that customers accepted
+         - Mix shift toward higher-value products
+
+      3. **Efficiency Gains**: Higher revenue per customer typically means:
+         - Lower customer acquisition costs per dollar of revenue
+         - Potentially higher profit margins
+         - More sustainable business model
+
+      **Critical Areas to Investigate:**
+
+      1. **Customer Retention Analysis**:
+         - Are you losing low-value customers (good) or high-value customers (concerning)?
+         - Calculate customer lifetime value trends
+         - Analyze churn patterns by customer segment
+
+      2. **Market Position Assessment**:
+         - Are competitors capturing the volume you're losing?
+         - Is your market share in your target segment growing?
+         - Price elasticity analysis: How sensitive are customers to your pricing?
+
+      3. **Sustainability Concerns**:
+         - Can you maintain this trend, or was this a one-time adjustment?
+         - Pipeline analysis: Are lead quality and quantity supporting this model?
+         - Capacity utilization: Can you serve more high-value customers?
+
+      **Recommended Actions:**
+
+      1. **Segment Analysis**: Break down the 5% customer decrease by:
+         - Customer value tiers
+         - Geographic regions
+         - Product categories
+         - Acquisition channels
+
+      2. **Cohort Analysis**: Track how different customer groups behave over time
+
+      3. **Competitive Intelligence**: Monitor if competitors are gaining the customers you're losing
+
+      4. **Customer Feedback**: Survey departing customers to understand reasons for leaving
+
+      **Next Quarter Strategy:**
+      - If losing low-value customers: Double down on premium positioning
+      - If losing valuable customers: Investigate service issues or competitive threats
+      - Consider controlled expansion to capture more high-value prospects
+
+  - question: |
+      I'm analyzing website conversion data. Page A has a 3.2% conversion rate 
+      with 10,000 visitors, and Page B has a 3.8% conversion rate with 8,500 
+      visitors. Is Page B significantly better? How should I interpret this 
+      statistically?
+    answer: |
+      Let me help you determine if this difference is statistically significant:
+
+      **Statistical Analysis:**
+
+      **1. Basic Calculations:**
+      - Page A: 3.2% × 10,000 = 320 conversions
+      - Page B: 3.8% × 8,500 = 323 conversions
+      - Difference: 0.6 percentage points (18.75% relative improvement)
+
+      **2. Statistical Significance Test (Z-test for proportions):**
+
+      ```
+      Pooled conversion rate = (320 + 323) / (10,000 + 8,500) = 3.47%
+      
+      Standard error = √[0.0347 × (1-0.0347) × (1/10,000 + 1/8,500)] = 0.00274
+      
+      Z-score = (0.038 - 0.032) / 0.00274 = 2.19
+      
+      P-value ≈ 0.028 (two-tailed test)
+      ```
+
+      **Result**: The difference IS statistically significant at α = 0.05 level.
+
+      **3. Practical Significance Analysis:**
+
+      **Confidence Interval for the difference:**
+      - 95% CI: 0.6% ± 1.96 × 0.274% = [0.06%, 1.14%]
+      - The true difference is likely between 0.06% and 1.14%
+
+      **Effect Size:**
+      - Relative improvement: 18.75%
+      - This is a meaningful business impact
+
+      **Interpretation & Recommendations:**
+
+      **1. Statistical Conclusion:**
+      ✅ Page B performs significantly better than Page A
+      ✅ The probability this difference occurred by chance is only 2.8%
+      ✅ The effect size is practically meaningful
+
+      **2. Business Implications:**
+      - If you switched all traffic to Page B's design:
+        - Expected additional conversions: ~60 per 10,000 visitors
+        - Annual impact depends on your visitor volume and conversion value
+
+      **3. Important Considerations:**
+
+      **Sample Quality:**
+      - Ensure both pages were tested under similar conditions
+      - Check for seasonality, traffic source differences, or external factors
+      - Verify random traffic allocation
+
+      **Confidence Level:**
+      - 95% confidence means 1 in 20 chance this is a false positive
+      - Consider your tolerance for risk in implementation
+
+      **Additional Analysis Recommendations:**
+
+      1. **Segment Analysis**: Test if the improvement holds across:
+         - Different traffic sources
+         - Device types (mobile/desktop)
+         - User demographics
+         - Time periods
+
+      2. **Secondary Metrics**: Check if Page B also improves:
+         - Bounce rate
+         - Time on page
+         - Downstream conversions
+         - Revenue per visitor
+
+      3. **Implementation Strategy**:
+         - Gradual rollout (e.g., 10%, 25%, 50%, 100%)
+         - Monitor for any unexpected changes
+         - A/B test other page elements to compound improvements
+
+      **Final Recommendation**: 
+      Implement Page B as your default, but continue monitoring performance and testing new variations to drive further improvements.
+
+  - question: |
+      I'm comparing two marketing campaigns. Campaign A had 500 clicks and 25 
+      conversions. Campaign B had 300 clicks and 18 conversions. Both ran for 
+      the same duration with the same budget. Which performed better and why?
+    answer: |
+      Let me provide a comprehensive analysis of both campaigns:
+
+      **Performance Metrics Comparison:**
+
+      **1. Conversion Rate Analysis:**
+      - Campaign A: 25/500 = 5.0% conversion rate
+      - Campaign B: 18/300 = 6.0% conversion rate
+      - **Winner: Campaign B** (20% higher conversion rate)
+
+      **2. Statistical Significance:**
+      Using a two-proportion z-test:
+      - Pooled rate: (25+18)/(500+300) = 5.375%
+      - Standard error: 0.0178
+      - Z-score: 0.56
+      - P-value: 0.575 (not statistically significant)
+
+      **Conclusion**: While Campaign B has a higher conversion rate, the difference is not statistically significant (p > 0.05).
+
+      **3. Efficiency Analysis (Same Budget):**
+
+      **Click Generation Efficiency:**
+      - Campaign A: 500 clicks per budget unit
+      - Campaign B: 300 clicks per budget unit
+      - **Campaign A generated 67% more clicks** for the same spend
+
+      **Cost Per Conversion:**
+      - Campaign A: Budget ÷ 25 conversions
+      - Campaign B: Budget ÷ 18 conversions
+      - Campaign A: 28% lower cost per conversion
+
+      **Overall Performance Verdict:**
+
+      **Campaign A performs better overall** because:
+      1. **Volume**: Generated significantly more traffic (67% more clicks)
+      2. **Total conversions**: Delivered 39% more conversions (25 vs 18)
+      3. **Cost efficiency**: Lower cost per conversion
+      4. **Scalability**: Demonstrated ability to generate higher volume
+
+      **Deeper Analysis Recommendations:**
+
+      **1. Traffic Quality Assessment:**
+      ```
+      Quality Score = Conversion Rate × Volume × Sustainability
+      
+      Campaign A Score = 5.0% × 500 × [Scalability Factor]
+      Campaign B Score = 6.0% × 300 × [Scalability Factor]
+      ```
+
+      **2. Audience Analysis:**
+      - Campaign A may be targeting a broader, more accessible audience
+      - Campaign B might be targeting a niche, high-intent audience
+      - Consider audience size and saturation potential
+
+      **3. Creative/Message Analysis:**
+      - Campaign B's higher conversion rate suggests better message-market fit
+      - Campaign A's higher volume suggests broader appeal
+      - Test combining B's messaging with A's targeting
+
+      **Strategic Recommendations:**
+
+      **Short-term (Next 30 days):**
+      1. **Increase Campaign A budget** to capitalize on its volume potential
+      2. **Test Campaign B's creative elements** in Campaign A's audience
+      3. **A/B test hybrid approaches** combining both strategies
+
+      **Medium-term (Next Quarter):**
+      1. **Audience Expansion**: Use Campaign B's high-converting audience as a seed for lookalike targeting in Campaign A's format
+      2. **Creative Optimization**: Apply Campaign B's messaging principles to Campaign A's broader reach
+      3. **Budget Allocation**: 70% to optimized Campaign A approach, 30% to Campaign B refinements
+
+      **Long-term Strategic Insights:**
+      - **Campaign A approach**: Better for growth and scale
+      - **Campaign B approach**: Better for premium positioning and margins
+      - **Optimal strategy**: Blend both approaches based on business goals
+
+      **Key Performance Indicators to Track:**
+      1. Customer Lifetime Value by campaign source
+      2. Return on Ad Spend (ROAS) beyond initial conversion
+      3. Audience saturation rates
+      4. Competitive response to scaling efforts
+
+      **Final Recommendation**: 
+      Scale Campaign A while incorporating Campaign B's conversion optimization learnings. The combination should yield both high volume AND high conversion rates.
