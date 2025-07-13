@@ -12,6 +12,8 @@ This project contains a custom taxonomy designed to enhance AI models with domai
 - **Coding Skills**: Algorithm implementation, debugging, code optimization
 - **Analysis Skills**: Data interpretation, pattern recognition, problem-solving
 
+![demo](https://github.com/AMMU-N-RAJ/Ollama-Llama-3.2-3B-Interactive-Chat/blob/main/output2.mp4)
+
 ## 🏗️ Structure
 
 ```
