@@ -52,6 +52,8 @@ ilab model train
 ilab model chat
 ```
 
+![hide the name you wan to give ](https://github.com/AMMU-N-RAJ/Ollama-Llama-3.2-3B-Interactive-Chat/blob/main/Screenshot%202025-07-13%20130145.png)
+
 ### Integration
 1. Clone this repository to your InstructLab workspace
 2. Point InstructLab to this taxonomy path
